@@ -1,0 +1,76 @@
+
+@charset "utf-8";
+/*CSS document*/
+
+/* --------------------------------------------------------
+Style Sheet for Likewhiteheadphones Website
+
+version: 1.0
+last modified: 23.02.2017 by Robert Ashley
+author: Robert Ashley
+email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
+website: http://likewhiteheadphon.es
+----------------------------------------------------------*/
+
+
+/* Show grid code 
+
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px dotted rgba(0, 0, 0, 0.5);
+}
+ 
+
+body {
+	background-color: rgb(255,255,255);
+}
+
+header {
+	padding-top: 25%;
+}
+
+*/
+
+
+.mute-button {
+	display: none;
+}
+
+.about {
+
+}
+
+.affix {
+      top: 20px;
+      width: 30%;
+}
+
+@media (max-width: 767px) {
+   .affix {
+       position: static;
+       width: 100%;
+       top: 20px;
+   }
+} 
+
+.controls-bar {
+	/* display: none; */
+	position: fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(255, 0, 0, 0.2);
+	height: 40px;
+}
+
+.progressbar-container{
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  position: relative;
+  top: 5px;
+
+}
+
+
+      
