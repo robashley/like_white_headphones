@@ -31,13 +31,13 @@ header {
 
 */
 
-
-.mute-button {
-	display: none;
-}
-
-.about {
-
+body {
+   font-family: 'Raleway', 'helvetica' , 'arial'!important;
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: 0.02em;
+   color: 000;
+   text-transform: ;
 }
 
 .affix {
@@ -45,32 +45,69 @@ header {
       width: 30%;
 }
 
-@media (max-width: 767px) {
+@media (max-width:767px) {
    .affix {
        position: static;
        width: 100%;
        top: 20px;
    }
+
+   .progress-bar {
+    display: none;
+   }
 } 
 
-.controls-bar {
-	/* display: none; */
-	position: fixed;
-	left:0;
-	right:0;
-	bottom:0;
-	background-color: rgba(255, 0, 0, 0.2);
-	height: 40px;
+.btn {
+     float: left;
+}
+.btn .btn-default {
+  display: block;
+  position: fixed;
+  z-index: 1;
 }
 
-.progressbar-container{
-  display: inline-block;
-  width: 50%;
+.progressbar-container {
+  display: block;
+  height: 40px;
   margin: 0;
-  position: relative;
-  top: 5px;
-
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
 }
 
+.progress-bar {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-brand {
+  display:none;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+  margin-left: auto;
+  float: none;
+  width: 100%;
+}
+
+.list-group-item {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
 
       
