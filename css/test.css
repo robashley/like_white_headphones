@@ -31,46 +31,178 @@ header {
 
 */
 
+body {
+   font-family: 'Raleway', 'helvetica' , 'arial'!important;
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: 0.02em;
+   color: #000;
 
-.mute-button {
-	display: none;
+ }
+
+ .col-xs-12 {
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+
+/* TYPOGRAPHY */
+
+.slug {
+   font-family: 'Raleway', 'helvetica' , 'arial'!important;
+   font-weight: 400;
+   font-style: italic;
+   letter-spacing: 0.02em;
 }
 
-.about {
-
+.header { 
+   font-family: 'Raleway', 'helvetica' , 'arial'!important;
+   font-weight: 400;
+   font-size: 21px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
 }
+
+.spacing {
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-transform: lowercase;
+  text-decoration: line-through;
+}
+
+/* end of TYPOGRAPHY */
 
 .affix {
       top: 20px;
       width: 30%;
 }
 
-@media (max-width: 767px) {
+.about.affix-top {
+   padding-right: 20px;
+}
+
+@media (max-width:767px) {
    .affix {
        position: static;
        width: 100%;
        top: 20px;
    }
+
+   .progress-bar {
+    display: none;
+   }
 } 
 
-.controls-bar {
-	/* display: none; */
-	position: fixed;
-	left:0;
-	right:0;
-	bottom:0;
-	background-color: rgba(255, 0, 0, 0.2);
-	height: 40px;
+.btn {
+     float: left;
+}
+.btn .btn-default {
+  display: block;
+  position: fixed;
+  z-index: 1;
 }
 
-.progressbar-container{
-  display: inline-block;
-  width: 50%;
+.progressbar-container {
+  display: block;
+  height: 40px;
   margin: 0;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.progress-bar {
   position: relative;
-  top: 5px;
+  z-index: 2;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-brand {
+  display:none; 
+}
+
+.navbar-nav {
+  margin-bottom: 7.5px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 7.5px;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+  margin-left: auto;
+  float: none;
+  width: 100%;
+}
+
+.list-group-item {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
 
 }
 
+.list-group-item:last-child {
+  border-bottom: none;
+}
 
-      
+.list-group-item:nth-last-child(2) {
+  border-bottom: 3px solid #000;
+}
+ 
+ .list-group-item:first-child {
+  border-top: 3px solid #000;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}     
+
+.list-group {
+  margin-bottom: 10%;
+} 
+
+.footer {
+  border: none;
+  background: #ddd;
+  color: #000;
+  float: none;
+  width: 100%;
+  height: 40px;
+}
+
+.footer p {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  text-align: center;
+}
+
+.multiSounds__details {
+  display: none;
+}
+
+iframe {
+  margin-top:40px; 
+  height: 640px;
+  float: none;
+  margin-bottom: 10%;
+
+}
+
