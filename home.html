@@ -10,6 +10,7 @@
     	<!--bootstrap-->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
     	<link href="css/test.css" rel="stylesheet">
+        <link href="css/modal.css" rel="stylesheet">
  
     	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,27 +25,49 @@
 	</head>
 
 	<body>
+        <!-- THE MODAL OVERLAY -->
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Archive</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">Decemeber 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">November 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">October 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">September 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">August 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">July 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">June 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">May 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">April 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">March 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">February 2017</a></li>
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">January 2017</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+        <!-- END MODAL OVERLAY -->
+        </div>
         <!-- NAVBAR -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="header"> Menu </span>
-                    </button>
-                    <a class="navbar-brand" href="#">Masthead</a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ARCHIVE</a></li>
-                        <li><a href="#">INFO</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#">LIKEWHITEHEADPHONES</a>
+                </div>
+                <div class="navbar-header pull-right">
+                    <button id="myBtn" class="btn btn-link navbar-btn">ARCHIVE</button>
+                </div>
             </div><!-- /.container-fluid -->
         </nav>
         <!-- END OF NAVBAR -->
@@ -58,39 +81,38 @@
                         <p>
                             Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua.
                         </p>
+                        <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Frob-ashley%2Fsets&color=orange_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-7 col-md-4">
-                        <p><span class="slug">This Month</span></p>
+                    <div class="col-xs-12 col-sm-7 col-md-7">
                         <p span class="header">December</p span>
+                        <p>Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua.</p>
+                        <a href="#">PLAY ALL</a>
                         <ul class="list-group">
-                            <li class="list-group-item">Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua. </br>
-                            <a href="#"><p span class="spacing">PLAY ALL</p span></a>
-                            </li>
-                            <li class="list-group-item"><span class="slug">Track One</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Two</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Three</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Four</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Five</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Six</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Seven</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Eight</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Nine</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Ten</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Eleven</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Twelve</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><a href="#">PLAY ALL</a></li>
+                            <li class="list-group-item"><span class="badge">1</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">2</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">3</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">4</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">5</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">6</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">7</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">8</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">9</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">10</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">11</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge">12</span>ARTIST NAME</br>SONG TITLE</li>
                         </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-7 col-sm-offset-5 col-md-4 col-md-offset-0"> 
-                        <p><span class="slug">Last Month</spam></p>
-                        <p span class="header">November</p span>
-                        <ul class="list-group">
-                            <li class="list-group-item"><span class="slug">Track One</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Two</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><span class="slug">Track Three</span></br>ARTIST NAME</br>SONG TITLE</br>0:00</li>
-                            <li class="list-group-item"><a href="#">PLAY ALL</a></li>
-                        </ul>
+
+                        <iframe width="80%" height="" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+
+                        <hr width="100%">
+
+                        <p span class="header">December</p span>
+                        <p>Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua. </p>
+                        <p><a href="#">PLAY ALL</a></p>
+
+                        <iframe width="80%" height="" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+
                     </div>
             </div>
 
@@ -127,5 +149,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script>
 	</body>
 </html>
