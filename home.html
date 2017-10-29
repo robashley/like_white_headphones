@@ -81,13 +81,13 @@
                         <p>
                             Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua.
                         </p>
-                        <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Frob-ashley%2Fsets&color=orange_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
+                        <a href="https://soundcloud.com/rob-ashley/sets"><img src="logo_big_black.png" width="11%" height="11%"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-7 col-md-7">
                         <p span class="header">December</p span>
                         <p>Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua.</p>
-                        <a href="#">PLAY ALL</a>
+                        <button class="btn btn-link">PLAY / PAUSE</button>
                         <ul class="list-group">
                             <li class="list-group-item"><span class="badge">1</span>ARTIST NAME</br>SONG TITLE</li>
                             <li class="list-group-item"><span class="badge">2</span>ARTIST NAME</br>SONG TITLE</li>
@@ -103,13 +103,17 @@
                             <li class="list-group-item"><span class="badge">12</span>ARTIST NAME</br>SONG TITLE</li>
                         </ul>
 
-                        <iframe width="80%" height="" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                        <iframe id="soundcloud_widget" 
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
+                          width="80%"
+                          height="300"
+                          frameborder="no">
+                        </iframe>
 
                         <hr width="100%">
 
                         <p span class="header">December</p span>
                         <p>Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua. </p>
-                        <p><a href="#">PLAY ALL</a></p>
 
                         <iframe width="80%" height="" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 
@@ -149,6 +153,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://w.soundcloud.com/player/api.js"></script>
+    <script src="js/toggleplay_sc.js"></script>
     <script src="js/modal.js"></script>
 	</body>
 </html>
