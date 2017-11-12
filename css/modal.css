@@ -81,15 +81,17 @@ max-width: 630px;
 }
 
 .modal-header {
-    padding: 2px 16px;
+    padding: 20px 20px 5px 20px;
     background-color: #e6e7e7;
     color: #000;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 20px;
+}
 
 .modal-footer {
-    padding: 2px 16px;
+    padding: 2px 20px;
     background-color: #e6e7e7;
     color: #000;
 }
