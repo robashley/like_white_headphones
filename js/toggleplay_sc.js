@@ -3,7 +3,7 @@
      widget.bind(SC.Widget.Events.READY, function() {
        console.log('Ready...');
      });
-     $('button').click(function() {
+     $('button.playtoggle').click(function() {
        widget.toggle();
      });
    });
