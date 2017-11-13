@@ -4,8 +4,8 @@
 /* --------------------------------------------------------
 Style Sheet for Likewhiteheadphones Website
 
-version: 1.0
-last modified: 23.02.2017 by Robert Ashley
+version: 1.1
+last modified: 12.11.2017 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://likewhiteheadphon.es
@@ -31,56 +31,114 @@ header {
 */
 
 body {
-   font-family: 'helvetica' , 'arial'!important;
-   font-weight: 300;
+   font-family: 'Sixta-Light' 'helvetica' , 'arial'!important;
+   font-weight: normal;
    font-size: 14px;
    letter-spacing: 0.02em;
-   color: #000;
+   background-color: #e6e7e7;
+   color: #2d2e2d;
 
  }
+
+.affix {
+
+}
+
+.affix-top {
+  position: fixed;
+  width: 30%;
+}
+
+.affix-bottom {
+  position: absolute;
+}
 
  .col-xs-12 {
   padding-left: 30px;
   padding-right: 30px;
- }
+  margin-bottom: 30px;
+}
 
 /* TYPOGRAPHY */
 
-.slug {
-   font-family: 'helvetica' , 'arial'!important;
-   font-weight: 400;
-   font-style: italic;
-   letter-spacing: 0.02em;
+p {
+  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
 }
 
 .header { 
-   font-family: 'helvetica' , 'arial'!important;
-   font-weight: 400;
+   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+   font-weight: normal;
    font-size: 14px;
    letter-spacing: 0.03em;
    text-transform: uppercase;
 }
 
-.spacing {
-  padding-top: 15px;
-  margin-bottom: 0;
+.title {
+  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  margin-left: 45px;
+  text-transform: uppercase;
+}
+.archiveTitle {
+  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 
 a {
   color: #000;
+  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  text-decoration:none;
+  transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
 a:hover {
-  color: #000;
-  text-decoration: line-through;
+  background: #75F3A4;
+  color: #2d2e2d;
+  text-decoration: none;
+}
+
+.btn {
+  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FE1818;
+ }
+
+ .navbar-default .btn-link {
+  color: #FE1818;  
+ }
+
+.badge {
+  font-family: 'Sixta-Light','helvetica','arial'!important;
+  font-weight: normal;
+  font-size: 14px;
+  color: #FE1818;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
 }
 
 /* end of TYPOGRAPHY */
 
 .affix {
-      top: 20px;
-      width: 30%;
-
+  top: 20px;
+  width: 30%;
 }
 
 .about.affix-top {
@@ -93,48 +151,29 @@ a:hover {
        width: 100%;
        top: 20px;
    }
-
+   .affix-top {
+       position: static;
+       width: 100%;
+   }
+   .affix-bottom {
+     position: static;
+      width: 100%;
+  }
    .progress-bar {
     display: none;
    }
 } 
 
-/* .btn {
-     float: left;
-}
-.btn .btn-default {
-  display: block;
-  position: fixed;
-  z-index: 1;
-}
- */
-
-.navbar-brand{
- float: left;
+.navbar-brand {
+float: left;
 height: 50px;
 padding: 20px 30px;
 font-size: 14px;
 line-height: 20px;
 }
 
-
-.progressbar-container {
-  display: block;
-  height: 40px;
-  margin: 0;
-  position: fixed;
-  left:0;
-  right:0;
-  bottom:0;
-}
-
-.progress-bar {
-  position: relative;
-  z-index: 2;
-}
-
 .navbar-default {
-  background-color: #fff;
+  background-color: #e6e7e7;
   border: none;
 }
 
@@ -153,12 +192,26 @@ line-height: 20px;
   width: 100%;
 }
 
-.list-group-item {
-  font-family: 'helvetica' , 'arial'!important;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+
+
+.modal-body .list-group .list-group-item {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  background-color: #e6e7e7;
+}
+
+.col-xs-12.col-sm-7.col-md-7 .list-group {
+  margin-top: 2%;
+}  
+
+.col-xs-12.col-sm-7.col-md-7 .list-group-item {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -168,39 +221,26 @@ line-height: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
-
+  background-color: #e6e7e7;
 }
-
-
-/*.list-group-item:nth-last-child(2) {
-  border-bottom: 1px solid #000;
-}
- 
- .list-group-item:first-child {
-  border-top: 1px solid #000;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}     
-*/
-.list-group {
-  margin-top: 2%;
-  margin-bottom: 5%;
-} 
 
 .footer {
   border: none;
-  background: #ddd;
-  color: #000;
+  background: #17081f;
   float: none;
   width: 100%;
   height: 40px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 30px;
 }
 
 .footer p {
+  color: #7a7d84;
   margin-left: auto;
   margin-right: auto;
   float: none;
-  text-align: center;
+  text-align: left;
 }
 
 .multiSounds__details {
@@ -208,40 +248,82 @@ line-height: 20px;
 }
 
 iframe {
-  /*margin-top:40px; */
+  margin-top:2%;
+  width: 80%;
   height: 300px;
   float: none;
   margin-bottom:5%;
 }
 
- /* .btn {
-  padding-top: 15px;
-  padding-bottom: 15px;
+ .btn {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
   border: 0px;
-} */
+} 
 
 .btn:hover {
- color: #000;
-  text-decoration: line-through;
+ color: #fe1818;
+ text-decoration: none;
 }
 
-#this-month {
-    z-index: 1;
+.playtoggle {
+    color: #fe1818;
+
 }
 
-#last-month {
-    z-index: 5;
-    background-color: #fff;
+.last-month {
+    background-color: #7a7d84;
+    color: #e6e7e7;
+    padding-top: 30px;
 }
 
 hr {
   border-top: 1px solid #000;
 }
 
+/* ---- BADGE CSS ---- */
+
 .badge {
-  background-color: #ebebeb;
-  color: #0e040f;
+  background-color: #fff;
   border-radius: 0px;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
+  padding: 0px;
 }
+
+.badge.pull-left {
+    margin-right: 20px;
+    width: 25px;
+}
+
+/* ---- ARCHIVE BUTTON CSS ---- */
+#myBtn {
+position: absolute;
+-webkit-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+transform: rotate(270deg);
+right: 7px;
+top: 42px;
+margin-top: 0;
+}
+
+
+@media (max-width:767px) {
+
+  #myBtn {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  margin-top: 0;
+  } 
+
+  iframe {
+    width: 100%;
+  }
+
+} 

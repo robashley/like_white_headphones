@@ -20,7 +20,30 @@
     	<![endif]-->
 
         <!-- typefaces -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i" rel="stylesheet">
+            <!--
+            /**
+            * @license
+            * MyFonts Webfont Build ID 3481749, 2017-11-12T10:11:38-0500
+            * 
+            * The fonts listed in this notice are subject to the End User License
+            * Agreement(s) entered into by the website owner. All other parties are 
+            * explicitly restricted from using the Licensed Webfonts(s).
+            * 
+            * You may obtain a valid license at the URLs below.
+            * 
+            * Webfont: Sixta-Light by Hoftype
+            * URL: https://www.myfonts.com/fonts/hoftype/sixta/light/
+            * Copyright: Copyright (c) 2012 by Dieter Hofrichter. All rights reserved.
+            * Licensed pageviews: Unlimited
+            * 
+            * 
+            * License: https://www.myfonts.com/viewlicense?type=web&buildid=3481749
+            * 
+            * © 2017 MyFonts Inc
+            */
+            
+            -->
+            <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit/MyFontsWebfontsKit.css">
 
 	</head>
 
@@ -33,12 +56,12 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2>Archive</h2>
+                <span class="close">Close</span>
+                <p class="archiveTitle">Archive</p>
             </div>
             <div class="modal-body">
-                <ul class="list-group">
-                            <li class="list-group-item"><a href="http://www.soundcloud.com">Decemeber 2017</a></li>
+                <ul class="list-group archive">
+                            <li class="list-group-item"><a href="http://www.soundcloud.com">December 2017</a></li>
                             <li class="list-group-item"><a href="http://www.soundcloud.com">November 2017</a></li>
                             <li class="list-group-item"><a href="http://www.soundcloud.com">October 2017</a></li>
                             <li class="list-group-item"><a href="http://www.soundcloud.com">September 2017</a></li>
@@ -52,9 +75,7 @@
                             <li class="list-group-item"><a href="http://www.soundcloud.com">January 2017</a></li>
                 </ul>
             </div>
-            <div class="modal-footer">
-                <h3>Modal Footer</h3>
-            </div>
+            <div class="modal-footer">            </div>
         </div>
         <!-- END MODAL OVERLAY -->
         </div>
@@ -76,70 +97,58 @@
         <div class="container-fluid">
             <div class="row">
                     <div class="col-xs-12 col-sm-5 col-md-4">
-                        <div class="about" data-spy="affix" data-offset-top="75">
+                        <div class="about" data-spy="affix" data-offset-top="10" data-offset-bottom="800">
                         <p span class="header">About</p span>
                         <p>
                             Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua.
                         </p>
-                        <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Frob-ashley%2Fsets&color=orange_transparent&size=32" style="width: 32px; height: 32px;"></iframe>
+                        <a href="https://soundcloud.com/rob-ashley/sets" target="_blank">SoundCloud</a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-7 col-md-7">
                         <p span class="header">December</p span>
-                        <p>Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua.</p>
-                        <a href="#">PLAY ALL</a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus vitae massa vel laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pulvinar, mi ut convallis aliquet, mi risus pretium est, non tristique est mi id velit.
+                        </p>
+                        <button class="btn btn-link playtoggle">PLAY / PAUSE</button>
                         <ul class="list-group">
-                            <li class="list-group-item"><span class="badge">1</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">2</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">3</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">4</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">5</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">6</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">7</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">8</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">9</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">10</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">11</span>ARTIST NAME</br>SONG TITLE</li>
-                            <li class="list-group-item"><span class="badge">12</span>ARTIST NAME</br>SONG TITLE</li>
+                            <li class="list-group-item"><span class="badge pull-left">1</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">2</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">3</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">4</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">5</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">6</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">7</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">8</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">9</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">10</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">11</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
+                            <li class="list-group-item"><span class="badge pull-left">12</span><p class="title">ARTIST NAME</br>SONG TITLE</p></li>
                         </ul>
 
-                        <iframe width="80%" height="" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                        <iframe id="soundcloud_widget" 
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
+                          height="300"
+                          frameborder="no">
+                        </iframe>
 
-                        <hr width="100%">
-
-                        <p span class="header">December</p span>
-                        <p>Lorem ipsum dolor sit amet nulla. Pharetra adipiscing nulla suspendisse magna tempus. Vestibulum nisl ac. Dolor bibendum aliqua. </p>
-                        <p><a href="#">PLAY ALL</a></p>
+                    </div>
+            </div>
+            <div class="row last-month">
+                <div class="col-xs-12 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-4">
+                        <p span class="header">Last Month</p span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus vitae massa vel laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pulvinar, mi ut convallis aliquet, mi risus pretium est, non tristique est mi id velit.
+                        </p>
 
                         <iframe width="80%" height="" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/343311276&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 
                     </div>
             </div>
 
-            <!--
-            <div class="row">
-                    
-                    PROGRESS BAR 
-
-
-                    <div class="progress progressbar-container">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-                            <span class="sr-only">60% Complete</span>
-                            <button type="button" class="btn btn-default">Play</button>
-                            <button type="button" class="btn btn-default">Mute</button>
-                        </div>
-                    </div>
-
-                    END OF PROGRESS BAR 
-
-                    CONTROLS
-
-                    <div class="controls-bar col-xs-12 col-sm-12 col-md-12"></div>
-            </div> 
-             -->
             <div class="row">
                     <div class="footer"> 
-                        <p>FOOTER</p>
+                        <p>Likewhiteheadphones – 2017</p>
                     </div>
             </div>
         </div>
@@ -149,6 +158,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://w.soundcloud.com/player/api.js"></script>
+    <script src="js/toggleplay_sc.js"></script>
     <script src="js/modal.js"></script>
 	</body>
 </html>
