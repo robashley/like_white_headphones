@@ -67,10 +67,17 @@ max-width: 630px;
 
 /* The Close Button */
 .close {
-    color: #000;
+    /* color: #000;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: px;
+    line-height: 36px;
+    font-weight: bold; */
+
+   font-family: 'Sixta','helvetica' , 'arial'!important;
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
 }
 
 .close:hover,

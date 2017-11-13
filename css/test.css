@@ -86,6 +86,14 @@ p {
   margin-left: 45px;
   text-transform: uppercase;
 }
+.archiveTitle {
+  font-family: 'Sixta','helvetica' , 'arial'!important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
 
 a {
   color: #000;
