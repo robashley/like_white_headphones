@@ -85,6 +85,7 @@ p {
   letter-spacing: 0.01em;
   margin-left: 45px;
   text-transform: uppercase;
+  color: #2d2e2d;
 }
 .archiveTitle {
   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
@@ -93,21 +94,23 @@ p {
   line-height: 26px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  color: #2d2e2d;
 }
 
 a {
-  color: #000;
+  color: #2d2e2d;
   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.01em;
   text-decoration:none;
   transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+  color: #2d2e2d;
 }
 
 a:hover {
-  background: #75F3A4;
-  color: #2d2e2d;
+  background: #50DC96;
+  color: #50DC96;
   text-decoration: none;
 }
 
@@ -117,18 +120,23 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FE1818;
+  color: #2d2e2d;
  }
 
  .navbar-default .btn-link {
-  color: #FE1818;  
+  color: #2d2e2d;  
+ }
+
+  .navbar-default .btn-link:hover {
+  color: #50DC96;
+  text-decoration: none;
  }
 
 .badge {
   font-family: 'Sixta-Light','helvetica','arial'!important;
   font-weight: normal;
   font-size: 14px;
-  color: #FE1818;
+  color: #50DC96;
   text-align: center;
   vertical-align: middle;
   line-height: 25px;
@@ -164,17 +172,20 @@ a:hover {
    }
 } 
 
-.navbar-brand {
+.navbar-default .navbar-brand {
 float: left;
 height: 50px;
 padding: 20px 30px;
-font-size: 14px;
+font-size: 16px;
 line-height: 20px;
+letter-spacing: 0.03em;
+color: #2d2e2d;
 }
 
 .navbar-default {
   background-color: #e6e7e7;
   border: none;
+
 }
 
 
@@ -264,12 +275,12 @@ iframe {
 } 
 
 .btn:hover {
- color: #fe1818;
+ color: #50DC96;
  text-decoration: none;
 }
 
 .playtoggle {
-    color: #fe1818;
+    color: #2d2e2d;
 
 }
 
