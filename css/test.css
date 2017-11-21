@@ -35,7 +35,7 @@ body {
    font-weight: normal;
    font-size: 14px;
    letter-spacing: 0.02em;
-   background-color: #e6e7e7;
+   background-color: rgb(249, 248, 247);
    color: #2d2e2d;
 
  }
@@ -80,13 +80,19 @@ p {
 .title {
   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
   margin-left: 45px;
   text-transform: uppercase;
-  color: #2d2e2d;
+  color: #7a7d84;
 }
+
+.title:hover {
+  color: #2d2e2d;
+  text-decoration: none;
+}
+
 .archiveTitle {
   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
   font-weight: normal;
@@ -183,7 +189,7 @@ color: #2d2e2d;
 }
 
 .navbar-default {
-  background-color: #e6e7e7;
+  background-color: rgb(249, 248, 247);
   border: none;
 
 }
@@ -215,7 +221,7 @@ color: #2d2e2d;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 20px;
-  background-color: #e6e7e7;
+  background-color: rgb(249, 248, 247);
 }
 
 .col-xs-12.col-sm-7.col-md-7 .list-group {
@@ -232,7 +238,7 @@ color: #2d2e2d;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
-  background-color: #e6e7e7;
+  background-color: rgb(249, 248, 247);
 }
 
 .footer {
