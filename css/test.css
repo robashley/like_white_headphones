@@ -89,14 +89,14 @@ p {
 }
 
 .title:hover {
-  color: #2d2e2d;
+  color: #50DC96;
   text-decoration: none;
 }
 
 .archiveTitle {
   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -146,6 +146,17 @@ a:hover {
   text-align: center;
   vertical-align: middle;
   line-height: 25px;
+}
+
+.month {
+font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+font-weight: normal;
+font-size: 21px;
+line-height: 30px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+  color: #2d2e2d;
+
 }
 
 /* end of TYPOGRAPHY */
@@ -281,6 +292,16 @@ iframe {
 } 
 
 .btn:hover {
+ color: #7a7d84;
+ text-decoration: none;
+}
+
+.btn:active {
+ color: #50DC96;
+ text-decoration: none;
+}
+
+.btn:visited {
  color: #50DC96;
  text-decoration: none;
 }
