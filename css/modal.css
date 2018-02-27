@@ -85,6 +85,7 @@ max-width: 630px;
     color: #000;
     text-decoration: none;
     cursor: pointer;
+    cursor: url('cursor-2.svg'), auto;
 }
 
 .modal-header {

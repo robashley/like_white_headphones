@@ -37,6 +37,7 @@ body {
    letter-spacing: 0.02em;
    background-color: rgb(249, 248, 247);
    color: #2d2e2d;
+   cursor: url('cursor-1.svg'), auto;  
 
  }
 
@@ -112,12 +113,16 @@ a {
   text-decoration:none;
   transition: background 0.1s cubic-bezier(.33,.66,.66,1);
   color: #2d2e2d;
+  cursor: url('cursor-2.svg'), auto;  
+
 }
 
 a:hover {
   background: #50DC96;
   color: #50DC96;
   text-decoration: none;
+  cursor: url('cursor-2.svg'), auto;  
+
 }
 
 .btn {
@@ -294,11 +299,13 @@ iframe {
 .btn:hover {
  color: #7a7d84;
  text-decoration: none;
+ cursor: url('cursor-2.svg'), auto;
 }
 
 .btn:active {
  color: #50DC96;
  text-decoration: none;
+ cursor: url('cursor-1.svg'), auto;
 }
 
 .btn:visited {
