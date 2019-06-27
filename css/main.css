@@ -31,18 +31,22 @@ header {
 */
 
 body {
-   font-family: 'Sixta-Light' 'helvetica' , 'arial'!important;
+   font-family: 'Formular-light' 'helvetica' , 'arial'!important;
    font-weight: normal;
    font-size: 14px;
    letter-spacing: 0.02em;
-   background-color: rgb(249, 248, 247);
+   /* background-color: rgb(255, 255, 255); */
+
+   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
    color: #2d2e2d;
    cursor: url('cursor-1.svg'), auto;  
 
  }
 
-.affix {
 
+.affix {
+  top: 20px;
+  width: 30%;
 }
 
 .affix-top {
@@ -50,8 +54,20 @@ body {
   width: 30%;
 }
 
+.about.affix-top {
+   padding-right: 20px;
+}
+
+.about.affix {
+   padding-right: 20px;
+}
+
 .affix-bottom {
   position: absolute;
+}
+
+.about.affix-bottom {
+   padding-right: 20px;
 }
 
  .col-xs-12 {
@@ -63,7 +79,7 @@ body {
 /* TYPOGRAPHY */
 
 p {
-  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-family: 'Formular-light','helvetica' , 'arial'!important;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
@@ -71,31 +87,49 @@ p {
 }
 
 .header { 
-   font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+   font-family: 'Formular-light','helvetica' , 'arial'!important;
    font-weight: normal;
    font-size: 14px;
    letter-spacing: 0.03em;
-   text-transform: uppercase;
+   text-transform: none;
 }
 
+.list-group:hover p {
+  opacity: 0.3;
+
+  }
+
+.list-group:hover .list-group-item:hover p:hover {
+  opacity: 1.0;
+
+  }
+
 .title {
-  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-family: 'Formular-light','helvetica' , 'arial'!important;
   font-weight: normal;
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 44px;
   letter-spacing: 0.02em;
   margin-left: 45px;
   text-transform: uppercase;
-  color: #7a7d84;
+  color: #2d2e2d;
+
+  -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+  
+
 }
 
-.title:hover {
+/* .title:hover {
   color: #50DC96;
   text-decoration: none;
-}
+} */
+
+
 
 .archiveTitle {
-  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-family: 'Formular-light','helvetica' , 'arial'!important;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
@@ -106,7 +140,7 @@ p {
 
 a {
   color: #2d2e2d;
-  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-family: 'Formular-light','helvetica' , 'arial'!important;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.01em;
@@ -125,8 +159,18 @@ a:hover {
 
 }
 
+a:visited {
+  color: #2d2e2d;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2d2e2d;
+  text-decoration: none;
+}
+
 .btn {
-  font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+  font-family: 'Formular-light','helvetica' , 'arial'!important;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -144,7 +188,7 @@ a:hover {
  }
 
 .badge {
-  font-family: 'Sixta-Light','helvetica','arial'!important;
+  font-family: 'Formular-light','helvetica','arial'!important;
   font-weight: normal;
   font-size: 14px;
   color: #50DC96;
@@ -154,26 +198,18 @@ a:hover {
 }
 
 .month {
-font-family: 'Sixta-Light','helvetica' , 'arial'!important;
+font-family: 'Formular-light','helvetica' , 'arial'!important;
 font-weight: normal;
 font-size: 21px;
 line-height: 30px;
 letter-spacing: 0.02em;
 text-transform: uppercase;
-  color: #2d2e2d;
+color: #2d2e2d;
 
 }
 
 /* end of TYPOGRAPHY */
 
-.affix {
-  top: 20px;
-  width: 30%;
-}
-
-.about.affix-top {
-   padding-right: 20px;
-}
 
 @media (max-width:767px) {
    .affix {
@@ -196,16 +232,23 @@ text-transform: uppercase;
 
 .navbar-default .navbar-brand {
 float: left;
-height: 50px;
-padding: 20px 30px;
+left: 0;
+top: 50%;
+margin-top:0;
+-webkit-transform: rotate(270deg) translateY(-50%);
+-ms-transform: rotate(270deg translateY(-50%));
+transform: rotate(270deg) translateY(-50%);
+/*height: 50px; */
+padding: 20px 30px; 
 font-size: 16px;
 line-height: 20px;
 letter-spacing: 0.03em;
 color: #2d2e2d;
+position: fixed;
 }
 
 .navbar-default {
-  background-color: rgb(249, 248, 247);
+  background-color: rgb(255, 255, 255);
   border: none;
 
 }
@@ -225,8 +268,6 @@ color: #2d2e2d;
   width: 100%;
 }
 
-
-
 .modal-body .list-group .list-group-item {
   border-top: none;
   border-left: none;
@@ -237,7 +278,7 @@ color: #2d2e2d;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 20px;
-  background-color: rgb(249, 248, 247);
+  background-color: rgb(255, 255, 255);
 }
 
 .col-xs-12.col-sm-7.col-md-7 .list-group {
@@ -254,12 +295,15 @@ color: #2d2e2d;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
-  background-color: rgb(249, 248, 247);
+  background-color: inherit;
 }
 
+.last-month .col-xs-12.col-sm-7.col-md-7 .list-group-item p.title {
+  margin-left: 0px !important;
+}
 .footer {
   border: none;
-  background: #020100;
+  background-color: #000000;
   float: none;
   width: 100%;
   height: 40px;
@@ -269,7 +313,7 @@ color: #2d2e2d;
 }
 
 .footer p {
-  color: #7a7d84;
+  color: #fff;
   margin-left: auto;
   margin-right: auto;
   float: none;
@@ -319,10 +363,16 @@ iframe {
 }
 
 .last-month {
-    background-color: #7a7d84;
-    color: #e6e7e7;
+
+    background-color: #FFFFFF;  
+    color: #2d2e2d;
     padding-top: 30px;
 }
+
+.last-month p {
+    letter-spacing: 0.02em;
+}
+
 
 hr {
   border-top: 1px solid #000;
@@ -344,28 +394,38 @@ hr {
 }
 
 /* ---- ARCHIVE BUTTON CSS ---- */
-#myBtn {
+/* #myBtn {
 position: absolute;
 -webkit-transform: rotate(270deg);
 -ms-transform: rotate(270deg);
 transform: rotate(270deg);
 right: 7px;
 top: 42px;
-margin-top: 0;
+margin-top: 0; */
 }
 
 
 @media (max-width:767px) {
 
-  #myBtn {
+  /* #myBtn {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   position: absolute;
   right: 30px;
   top: 20px;
-  margin-top: 0;
-  } 
+  margin-top: 0; 
+  } */
+
+.navbar-default .navbar-brand {
+-webkit-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+padding: 20px 30px;
+letter-spacing: 0.03em;
+position: absolute;
+margin-top: 0;
+}
 
   iframe {
     width: 100%;
